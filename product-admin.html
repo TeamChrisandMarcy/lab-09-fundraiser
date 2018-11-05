@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin - Add/Remove Products</title>
+    <title>Adminstrators' Inventory Management</title>
+    <link rel="stylesheet" href="css/product-admin.css">
 </head>
-<body>
-    <header><h2>Admin - Add/Remove Products</h2></header>
-        <nav>
-            <a href="./index.html"> Home </a>
-            <a href="./products.html">Products</a>
-            <a href="./place-order.html">Place Order</a>
-            <a href="./order-admin.html">Admin Order Page</a>
-            <a href="./product-admin.html">Admin Product Inventory</a>
-        </nav>
-    <main>
+    <body>
+        <header>
+            <h2 id="product-admin-title">Administrators' Inventory Management</h2>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./order-page.html">Shop/Order</a>
+                <a href="./checkout.html">Checkout</a>
+                <a href="./product-admin.html">Admin Inventory Management</a>
+                <a href="./order-report.html">Admin Order Report</a>
+            </nav>
+        </header>
         <section id="add-product"> 
             <h2>Add a Product</h2>
             <form id="new-product">
@@ -36,7 +38,6 @@
                 </label>
             </form>
         </section>
-
         <section id="product-list">
             <h3> Products </h3>
             <ul id="products"></ul>
@@ -44,8 +45,6 @@
         <section class="hidden" id="product-detail">
             <p id="description"></p>
         </section>
-    </main>
-
-    <script type="module" src="js/app.js"></script>
-</body>
+    <script type="module" src="js/product-admin.js"></script>
+    </body>
 </html>

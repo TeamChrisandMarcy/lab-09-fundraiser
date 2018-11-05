@@ -15,7 +15,33 @@
         <a href="./order-admin.html">Admin Order Page</a>
         <a href="./product-admin.html">Admin Product Inventory</a>
     </nav>
+    <section id="add-product"> 
+        <h2>Add a Product</h2>
+        <form id="new-product">
+            <label>
+                Name:
+                <input required name="name">
+            </label>
+            <label>
+                Image: 
+                <input name="image">
+            </label>
+            <label>
+                Description: 
+                <input required name="description">
+            </label>
+            <label>
+                <button class="action">Add</button>
+            </label>
+        </form>
+    </section>
 
-    
+    <section id="product-list">
+        <h3> Products </h3>
+        <ul id="products"></ul>
+    </section>
+    <section class="hidden" id="product-detail">
+        <p id="description"></p>
+    </section>
 </body>
 </html>

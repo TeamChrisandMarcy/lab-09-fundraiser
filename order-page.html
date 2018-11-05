@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="css/order-page.css">
+</head>
+    <body>
+        <header>
+            <h2 id="order-title">Order Page</h2>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./order-page.html">Shop/Order</a>
+                <a href="./checkout.html">Checkout</a>
+                <a href="./product-admin.html">Admin Inventory Management</a>
+                <a href="./order-report.html">Admin Order Report</a>
+            </nav>
+        </header>
+        <form id="product-form">
+            <h2>Products</h2>
+            <div id="mugs">
+                <img src="./assets/mug.png">
+                <input type="checkbox" name="mugs" value="mugs">
+            </div>
+            <div id="t-shirtdiv">
+                <img src="./assets/t-shirt.png">
+                <select name="tshirt" id="t-shirt">
+                    <option value="" disabled selected> Please Select One</option>
+                    <optgroup label="women">
+                        <option value="wsxsmall">Women's x-small</option>
+                        <option value="wssmall"> Women's small</option>
+                        <option value="wsmedium"> Women's medium</option>
+                        <option value="wslarge"> Women's large</option>
+                    </optgroup>                
+                </select>
+            </div>
+            <div id="totes">
+                <img src="./assets/tote.png">
+                <input type="checkbox" name="totes" value="totes">  
+            </div>
+            <div>
+                <button id="submit-order-button" type="submit">Submit</button>
+            </div>
+        </form>
+        <section class="items-selected">
+            <h3>Shopping Cart</h3>
+            <ul class="product-selected"></ul>
+        </section>
+    <script type="module" src="js/order-page.js"></script>
+    </body>
+</html>

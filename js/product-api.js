@@ -2,17 +2,17 @@ let products = [
     {
         name: 'Mugs',
         image: 'mug.png',
-        description: 'Unicef Mug'
+        description: 'Unicef Mug. Shiny!'
     },
     {
         name: 'T-Shirt',
         image: 't-shirt.png',
-        description: 'T-Shirt'
+        description: 'T-Shirt. 100% Cotton.'
     },
     {
         name: 'Tote',
         image: 'tote.png',
-        description: 'Tote'
+        description: 'Tote Bag. Cotton/Ramie Blend.'
     }, 
 ];
 
