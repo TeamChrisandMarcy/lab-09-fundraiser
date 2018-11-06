@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 function makeProduct(product) {
     const html = `
         <li class="product">
@@ -9,7 +8,7 @@ function makeProduct(product) {
             <p class="description">
             ${product.description}
             </p>
-            <button id="add"> Add </button>
+            <button id="checkbox" type="checkbox"></button>
         </li>
         `;
 
@@ -21,25 +20,24 @@ function makeProduct(product) {
     
 }
 
-const list = document.getElementById('new-product');
+const list = document.getElementById('product-list-form');
 
-const productList = {
+const productForm = {
     init(products, onSelect) {
-        console.log('hello', products); 
         for(let i = 0; i < products.length; i++) {
-            productList.add(products[i]);
+            productForm.add(products[i]);
         }
-        productList.onSelect = onSelect; 
-        productList.products = products; 
-    }, 
+        productForm.onSelect = onSelect; 
+        productForm.products = products; 
+    },
     add(product) {
-        // console.log('productList.add', product); 
+        console.log('productForm.add', product); 
         const dom = makeProduct(product); 
 
         const listItem = dom.getElementById('add'); 
 
-        listItem.addEventListener('click', function() {
-                productList.onSelect(product); 
+        listItem.addEventListener('click,', function() {
+            productForm.onSelect(product); 
         }); 
 
         list.appendChild(dom);
@@ -50,4 +48,4 @@ const productList = {
     }
 }; 
 
-export default productList; 
+export default productForm; 
